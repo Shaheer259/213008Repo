@@ -1,0 +1,139 @@
+﻿namespace WinFormsApp1
+{
+    public partial class Form1 : Form
+    {
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItem == listBox2.SelectedItem)
+            {
+                txtAns.Text = txtFirstUnit.Text;
+            }
+
+            if (listBox1.SelectedItem == "Feet" && listBox2.SelectedItem == "Inches")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 12).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Inches" && listBox2.SelectedItem == "Feet")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 12).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Yard" && listBox2.SelectedItem == "Feet")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 3).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Feet" && listBox2.SelectedItem == "Yard")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 3).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Yard" && listBox2.SelectedItem == "Inches")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 36).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Inches" && listBox2.SelectedItem == "Yard")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 36).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem == "Inches")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 63360).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Inches" && listBox2.SelectedItem == "Mile")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 63360).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem == "Feet")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 5280).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Feet" && listBox2.SelectedItem == "Mile")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 5280).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem == "Yard")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 1760).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Yard" && listBox2.SelectedItem == "Mile")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 1760).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Inches" && listBox2.SelectedItem == "Meters")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 39.370).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Meters" && listBox2.SelectedItem == "Inches")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 39.370).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Meters" && listBox2.SelectedItem == "Feet")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 3.2808).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Feet" && listBox2.SelectedItem == "Meters")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 3.2808).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Meters" && listBox2.SelectedItem == "Yard")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 1.0936).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Yard" && listBox2.SelectedItem == "Meters")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 1.0936).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Meters" && listBox2.SelectedItem == "Miles")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) * 0.00062137).ToString();
+            }
+
+            if (listBox1.SelectedItem == "Miles" && listBox2.SelectedItem == "Meters")
+            {
+
+                txtAns.Text = (double.Parse(txtFirstUnit.Text) / 0.00062137).ToString();
+            }
+        }
+    }
+}
